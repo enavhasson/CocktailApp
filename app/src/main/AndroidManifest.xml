@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.cocktailsppc.cocktails">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.REORDER_TASKS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:name="android.hardware.camera.ar"
+        android:required="true" />
+
+    <application
+        android:name="com.cocktailsppc.cocktails.Cocktails"
+        android:allowBackup="false"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="false"
+        android:theme="@style/AppTheme"
+        tools:replace="android:supportsRtl, android:allowBackup"
+        tools:targetApi="q">
+        <activity android:name="com.cocktailsppc.cocktails.CustomItem.UserItemLevel3"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/AppUserTheme"
+            android:parentActivityName="com.cocktailsppc.cocktails.CustomItem.UserItemLevel2" />
+        <activity
+            android:name="com.cocktailsppc.cocktails.CustomItem.insertIngredients.SelectIngredient"
+            android:configChanges="orientation|screenSize"
+            android:parentActivityName="com.cocktailsppc.cocktails.CustomItem.AddIngredientItem" />
+        <activity
+            android:name="com.cocktailsppc.cocktails.CustomItem.insertIngredients.SelectUnit"
+            android:configChanges="orientation|screenSize"
+            android:parentActivityName="com.cocktailsppc.cocktails.CustomItem.AddIngredientItem" />
+        <activity
+            android:name="com.cocktailsppc.cocktails.CustomItem.AddIngredientItem"
+            android:configChanges="orientation|screenSize"
+            android:parentActivityName="com.cocktailsppc.cocktails.CustomItem.UserItemLevel2" />
+        <activity
+            android:name="com.cocktailsppc.cocktails.CustomItem.UserItemLevel2"
+            android:configChanges="orientation|screenSize"
+            android:parentActivityName="com.cocktailsppc.cocktails.CustomItem.UserItemLevel1" />
+        <activity
+            android:name="com.cocktailsppc.cocktails.CustomItem.CocktailIconLevel1"
+            android:configChanges="orientation|screenSize"
+            android:parentActivityName="com.cocktailsppc.cocktails.CustomItem.UserItemLevel1" />
+        <activity
+            android:name="com.cocktailsppc.cocktails.ScrollingActivity"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:theme="@style/AppTheme.Splash"
+            android:name="com.cocktailsppc.cocktails.SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.cocktailsppc.cocktails.CustomItem.UserItemLevel1"
+            android:configChanges="orientation|screenSize"
+            android:parentActivityName="com.cocktailsppc.cocktails.ScrollingActivity" />
+        <activity
+            android:name="com.cocktailsppc.cocktails.ItemDetailsActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_item_details_activity"
+            android:parentActivityName="com.cocktailsppc.cocktails.ScrollingActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.cocktailsppc.cocktails.ContactUsActivity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+        <meta-data
+            android:name="com.google.ar.core"
+            android:value="required" />
+    </application>
+
+</manifest>

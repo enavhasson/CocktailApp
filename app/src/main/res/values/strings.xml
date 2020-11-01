@@ -1,0 +1,121 @@
+<resources>
+    <string name="app_name">Cocktails</string>
+    <string name="title_activity_item_details_activity">Item_details_activity</string>
+    <string name="tab_text_1">Measuring helper</string>
+    <string name="tab_text_2">Recipe</string>
+    <string name="my_cocktails">My Cocktails</string>
+    <string name="favorites">Favorites</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="search">Search</string>
+    <string name="no_data">No data</string>
+    <string name="preparation">PREPARATION</string>
+    <string name="ingredients">INGREDIENTS</string>
+    <string name="categories">CATEGORIES</string>
+    <string name="apply">Apply</string>
+    <string name="level2">2</string>
+    <string name="level3">3</string>
+    <string name="level1">1</string>
+    <string name="required_field">Field is required</string>
+    <string name="contact_title">We are here to help.</string>
+    <string name="contact_subject_title">What\'s wrong?</string>
+    <string name="contact_body_title">Please elaborate:</string>
+    <string name="title_user_item">New cocktail</string>
+    <string name="ingredients_user">Ingredients</string>
+    <string name="preparation_user">Preparation</string>
+    <string name="quantity_title">Quantity</string>
+    <string name="unit_title">Unit</string>
+    <string name="exist_ingredient">Exist ingredient</string>
+    <string name="new_ingredient">New ingredient</string>
+    <string name="done">Done</string>
+    <string name="cancel">Cancel</string>
+    <string name="cocktail_name">Cocktail Name</string>
+    <string name="category">Category</string>
+    <string name="icon">Icon</string>
+    <string name="select">select</string>
+    <string name="cocktail_image">Cocktail Image</string>
+    <string name="upload">UPLOAD</string>
+    <string name="rotate_view">ROTATE VIEW</string>
+    <string name="delete">DELETE</string>
+    <string name="number">Number</string>
+    <string name="ingredient_user">Ingredient</string>
+    <string name="defaultUnit">oz</string>
+    <string name="create">Create</string>
+    <string name="example_step">Fill a Collins glass with ice</string>
+    <string name="example">"example "</string>
+    <string name="example_quantity">123</string>
+    <string name="example_unit">oz</string>
+    <string name="example_ingredient">Vodka</string>
+    <string name="error_ingredients_msg">* Please insert at least one ingredient</string>
+    <string name="error_step_msg">* Please insert at least one step</string>
+    <string-array name="cocktailTypes_array">
+        <item>Bourbon</item>
+        <item>Brandy</item>
+        <item>Cognac</item>
+        <item>Gin</item>
+        <item>Herbaceous</item>
+        <item>Rum</item>
+        <item>Rye Whiskey</item>
+        <item>Scotch</item>
+        <item>Tequila</item>
+        <item>Vodka</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="ingredients">
+        <item>Allspice dram</item>
+        <item>Amer Picon</item>
+        <item>Angostura bitters</item>
+        <item>Beet</item>
+        <item>Blue curacao</item>
+        <item>Bourbon</item>
+        <item>Brandy</item>
+        <item>Cachaca</item>
+        <item>Campari</item>
+        <item>Celery salt</item>
+        <item>Cherry</item>
+        <item>Cilantro</item>
+        <item>Cinnamon</item>
+        <item>Clamato</item>
+        <item>Coconut</item>
+        <item>Cognac</item>
+        <item>Cointreau</item>
+        <item>Cucumber</item>
+        <item>Egg</item>
+        <item>Gin</item>
+        <item>Grapefruit</item>
+        <item>Grenadine</item>
+        <item>Honey</item>
+        <item>Horseradish</item>
+        <item>Lemon</item>
+        <item>Lime</item>
+        <item>Midori</item>
+        <item>Mint</item>
+        <item>Orange</item>
+        <item>Parsley</item>
+        <item>Pineapple</item>
+        <item>Pisco</item>
+        <item>Prosecco</item>
+        <item>Rum</item>
+        <item>Rye</item>
+        <item>Scotch</item>
+        <item>Soda</item>
+        <item>Tabasco sauce</item>
+        <item>Tapatio hot sauce</item>
+        <item>Tequila</item>
+        <item>Tomato juice</item>
+        <item>Tonic</item>
+        <item>Vermouth</item>
+        <item>Vodka</item>
+        <item>Whiskey</item>
+        <item>Worcestershire sauce</item>
+    </string-array>
+    <string-array name="unitTypes_array">
+        <item>cup</item>
+        <item>oz</item>
+        <item>tbsp</item>
+        <item>dash</item>
+        <item>teaspoon</item>
+        <item>leave</item>
+        <item>slice</item>
+        <item>pinch</item>
+    </string-array>
+</resources>

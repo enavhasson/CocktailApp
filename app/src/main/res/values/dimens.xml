@@ -1,0 +1,25 @@
+<resources>
+    <dimen name="app_bar_height">180dp</dimen>
+    <dimen name="scrolling_margin">16dp</dimen>
+
+    <!-- Cocktails App -->
+    <dimen name="actionBarTitleBeforeCollapsing">43sp</dimen>
+    <dimen name="actionBarTitleAfterCollapsing">30sp</dimen>
+    <dimen name="headerFontSize">15sp</dimen>
+    <dimen name="textFontSize">11sp</dimen>
+    <dimen name="gridDim">2</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">15dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="appbar_padding">16dp</dimen>
+    <dimen name="appbar_padding_top">8dp</dimen>
+
+    <dimen name="h2">18sp</dimen>
+    <dimen name="h3">14sp</dimen>
+    <dimen name="space8">8dp</dimen>
+    <dimen name="space16">16dp</dimen>
+    <dimen name="space24">24dp</dimen>
+    <dimen name="title_user">18sp</dimen>
+
+</resources>

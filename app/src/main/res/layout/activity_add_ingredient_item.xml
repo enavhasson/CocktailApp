@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightColorBg"
+    tools:context="com.cocktailsppc.cocktails.CustomItem.AddIngredientItem">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/linear_layout">
+
+            <LinearLayout
+                android:id="@+id/quantity_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/quantity_title"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/raleway_light"
+                    android:textSize="22sp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+                android:maxLines="1"
+                app:endIconMode="clear_text"
+                android:fontFamily="@font/raleway_light"
+                android:id="@+id/textFieldQuantity"
+                app:helperTextEnabled="true"
+                app:helperText="Enter integer or float"
+                app:counterEnabled="true"
+                app:errorTextColor="@android:color/holo_red_dark"
+                app:counterMaxLength="10">
+
+                <AutoCompleteTextView
+                    android:id="@+id/quantity_TV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#00FFFFFF"
+                    android:inputType="numberDecimal"
+                    android:fontFamily="@font/raleway_light"
+                    android:textColor="@android:color/holo_blue_dark"
+                    tools:ignore="LabelFor" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="15dp"
+                android:background="@color/colorRipple" />
+            <LinearLayout
+                android:id="@+id/unit_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:clickable="true"
+                android:focusable="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Unit"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/raleway_light"
+                        android:textSize="22sp"/>
+
+                    <TextView
+                        android:id="@+id/unit_error"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="*"
+                        android:textSize="25dp"
+                        android:visibility="invisible"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/raleway_semibold"
+                        android:textAppearance="@style/Regular"
+                        android:textColor="@color/errorColor" />
+
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/unit_textView"
+                    android:layout_width="wrap_content"
+                    android:paddingTop="10dp"
+                    android:layout_height="40dp"
+                    android:fontFamily="@font/raleway_light"
+                    android:text="@string/defaultUnit"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="15dp"
+                android:background="@color/colorRipple" />
+            <LinearLayout
+                android:id="@+id/ingredient_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:clickable="true"
+                android:focusable="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ingredient_user"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/raleway_light"
+                        android:textSize="22sp"/>
+
+                    <TextView
+                        android:id="@+id/ingredient_error"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="*"
+                        android:textSize="25dp"
+                        android:visibility="invisible"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/raleway_semibold"
+                        android:textAppearance="@style/Regular"
+                        android:textColor="@color/errorColor" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/ingredient_textView"
+                    android:layout_width="wrap_content"
+                    android:paddingTop="10dp"
+                    android:text="None"
+                    android:layout_height="40dp"
+                    android:fontFamily="@font/raleway_light"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:textSize="18sp"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="15dp"
+            android:background="@color/colorRipple" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:layout_gravity="top"
+            android:orientation="horizontal"
+            android:gravity="center"
+            tools:ignore="MissingConstraints">
+
+            <Button
+            android:id="@+id/cancel_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/raleway_light"
+            android:textStyle="bold"
+            android:text="@string/cancel" />
+
+            <View
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp" />
+            <Button
+                android:id="@+id/done_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/raleway_light"
+                android:textStyle="bold"
+                android:text="save" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</ScrollView>
